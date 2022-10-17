@@ -1,121 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body{
-  color:#ddd;
-  font-family: cursive;
 }
 
-html { 
-  background: url(coffee-schem.jpeg) no-repeat center fixed; 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/trucking2.jpeg");
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.topnav{
-  overflow: hidden;
-  background-color: rgb(68, 52, 13);
-  opacity: 0.7;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 75px;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: rgb(193, 153, 97);
-  color: black;
-}
-
-.read-more{
   position: relative;
-  text-align: center;
-  font-family: cursive;
-  top: 200px;
-  line-height: 15px;
 }
 
-.read-more h1{
-  font-size: 30px;
-  margin: 25px;  
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
-	
-.btn{ 
-  line-height: 50px;
-  font-size: 10px;
-  letter-spacing: 2px;
-  margin: 5px;
-  padding: 5px 5px;
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.logo{
+    margin: 10px 30px;
+    height: 125px;
+}
+
+.left-column h2{
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.yo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.left-column{
+    float: left;
+    width: 40%;
+    margin-left: 50px;
+    text-align: justify;
+
+}
+
+.right-column{
+    float: right;
+    width: 50%;
+    margin-right: 45px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.right-column h2{
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.right-column a{
   text-decoration: none;
-  color: bisque;
-  border: 1px solid #fff;
-  border-radius: 10%;
 }
 
-.btn:hover{
-  background: rgb(193, 153, 97);
-  color: #fff;
-  transition: .4s;
+.projects a{
+   text-decoration: none;
+   padding: 10px;
 }
 
-.footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:35px;
-   width:100%;
-  background-color: rgb(68, 52, 13);
-  color: #ddd;
-  text-align: center;
-  opacity: 0.7;
-}
-
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
   }
-}
 
 </style>
 </head>
 <body>
-    <header>
 
-  <div class="topnav">
-    <a href="#">Home</a>
-    <a href="#">Location</a>
-    <a href="#">Contact</a>
+<div class="hero-image"><img src="logo/FLOWSVC-TRANSPARENT.png" class="logo">
+  <div class="hero-text">
+    <h1 style="font-size:50px"><i>Hi I am Michael</i></h1>
+    <p><i>And I'm a Transportation Consultant</i></p>
+    <button>Hire me</a></button>
   </div>
-  
-
-<div class="read-more">
-  <h1><i>Coming Soon</i></h1>
-  <p><i>Life Begins After Coffee.</i></p>
-  <a href="#" class="btn btn1">Contact</a>
 </div>
 
-    </header>
+<div class="left-column">
+<h2>About</h2>
+<img src="images/young-old2.jpg" class="yo">
+<p>Michael started his journey in life as a United States Marine at the age of 18 <strong>where he served for 6 years honorably,</strong> as a Marine Michael learned and honed his leadership skills. While serving in The United States Marine Corps. Michael was a first responder (Aircraft Firefighter). While combining his leadership skills and firefighting skills, Michael was able to lead young men into face of fear with confidence and knowledge. Michael attribute this ability to his passion for learning. Michael believes it's through learning that we gain knowledge to achieve and succeed.</p>
 
+<p>Due to a career changing injury Michael moved on from being a first responder (firefighter). Michael transitioned into <i>The Transportation and Logistics Field</i> where Michael has 30 years of service in many facets of the transportation industry, from driver to General Manager of a small to medium trucking company. Michael has also served as a union steward for drivers, logistics manager, office manager, and Michael is a certified master transportation broker.</p>
 
+<p>Michael is a husband and the proud father to a son and a daughter and extremely proud grandfather to <em>8</em> wonderful grandchildren. Michael’s passion for education has spilled over to his children and grandchildren. Emphasizing education is a big part of Michaels relationship with his family.  Michael is from Chicago and Chicago sports is a big part of Michael’s fun time life. Watching The Chicago Bears, White Sox, and Chicago Bulls is just not a hobby for Michael, it was a big part of his childhood growing up in Chicago.</p>
 
-
-<div class="footer">
-  <p>Copyright &copy;2022 – All Rights Reserved. Web Designer: Michael Flowers</p>
+<p>Michael has a whole host of training and education in the Transportation and Logistics industry, but Michael since he was a pre-teen has had a passion for technology. Michael holds an Associate Degree in Computer Network & Technology(Cisco Systems) from Glendale, Arizona Community College. Michael is now attending Phoenix Computer Academy studying Web Development. Michael has aspiration to one day achieve the title of Full Stack Web Developer.  Michael is not bothered or intimidated by his age, this will not diminish his passion for learning and achieving.</p>
 </div>
-  
+
+<div class="right-column">
+    <h2>Contact</h2>
+    <p>Flow Services</p>
+    <p>Glendale, Arizona</p>
+    <p>Email<a href="https://www.flowsvc.com/contact-us">  Contact Me</a></p>
+    <iframe width="455" height="220" src="https://www.youtube.com/embed/d-8dWLTYdCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Web Projects Created By Me:</h2>
+
+    <div class="projects">
+    <p><a href="https://express.adobe.com/page/URK01ha0XeO9A/" target="blank">Web Project/Flag Football</a></p>
+    <p><a href="https://express.adobe.com/page/v2qZDVd4NJVAO/" target="blank">Family Friend Project</a></p>
+    <p><a href="https://express.adobe.com/page/LukUTBKblXnO1/" target="blank">My Blog Project</a></p>
+    <p>"There’s a difference between working hard because you want to and working hard because someone else told you you had to, and how to do it, and when to do it. Even if you’re doing the same work, the independence of doing it on your own terms changes everything in the same way that sleeping in a tent is fun when you’re camping but miserable when you’re homeless".<i><em>.....'Morgan Housel'</i></em></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
