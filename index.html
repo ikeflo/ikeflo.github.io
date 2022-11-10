@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
+  <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" name="Michael Flowers" />
+    <script src="https://use.fontawesome.com/a0e56e10fa.js"></script>
+<Style>
 
-* {
+*{
   box-sizing: border-box;
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+  top: 0;
+}
+
+.logo{
+    margin-left: 50%;
+    height: 200px;
+}
+
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("trucking2.jpeg");
-  height: 75%;
+  background-image: url("images/trucking2.jpeg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border: 0px solid;
+  box-shadow: 5px 15px 6px #568b79;
 }
 
 .hero-text {
   text-align: center;
   position: absolute;
+  font-size: large;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -36,108 +51,240 @@ body, html {
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
+  color: #f2f2f2;
+  background-color: #568b79;
   text-align: center;
   cursor: pointer;
+  border-radius: 25%;
 }
 
 .hero-text button:hover {
-  background-color: #555;
+  background-color: #45a049;
   color: white;
 }
 
-.logo{
-    margin: 10px 30px;
-    height: 125px;
+#feature{
+  width: 100%;
+  padding: 70px 0;
+  border: 0px solid;
+  box-shadow: 5px 15px 8px #568b79;
 }
 
-.left-column h2{
-    text-align: center;
-    margin: 5px 10px;
+.title-text{
+  text-align: center;
+  padding-bottom: 70px;
 }
 
-.yo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.title-text p{
+  margin: auto;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
 }
 
-.left-column{
-    float: left;
-    width: 40%;
-    margin-left: 50px;
-    text-align: justify;
-
+.title-text p::after{
+  content: '';
+  width: 50px;
+  height: 35px;
 }
 
-.right-column{
-    float: right;
-    width: 50%;
-    margin-right: 45px;
-    text-align: center;
-    text-decoration: none;
+.feature-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 
-.right-column h2{
-    text-align: center;
-    margin: 5px 10px;
+.features{
+  flex-basis: 50%;
 }
 
-.right-column a{
-  text-decoration: none;
+.features-img{
+  flex-basis: 50%;
+  margin: auto;
 }
 
-.projects a{
-   text-decoration: none;
-   padding: 10px;
+.features-img img{
+  width: 100%;
 }
 
-  @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
+.features h1{
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.features-desc{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature-icon .fa{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  border: 1px solid; 
+}
+
+.feature-text p{
+  padding: 0 20px;
+  text-align: initial;
+}
+
+#contact{
+  width: 100%;
+  height: 30px;
+  padding: 50px 0;
+  background-color: #568b79;
+}
+
+.contact-text{
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #568b79;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
+}
 
-</style>
+</Style>
+    
 </head>
-<body>
+    <body>
 
-<div class="hero-image"><img src="FLOWSVC-TRANSPARENT.png" class="logo">
-  <div class="hero-text">
-    <h1 style="font-size:50px"><i>Hi I am Michael</i></h1>
-    <p><i>And I'm a Transportation Consultant</i></p>
-    <button>Hire me</a></button>
-  </div>
-</div>
 
-<div class="left-column">
-<h2>About</h2>
-<img src="young-old2.jpg" class="yo">
-<p>Michael started his journey in life as a United States Marine at the age of 18 <strong>where he served for 6 years honorably,</strong> as a Marine Michael learned and honed his leadership skills. While serving in The United States Marine Corps. Michael was a first responder (Aircraft Firefighter). While combining his leadership skills and firefighting skills, Michael was able to lead young men into face of fear with confidence and knowledge. Michael attribute this ability to his passion for learning. Michael believes it's through learning that we gain knowledge to achieve and succeed.</p>
+      <div class="hero-image"><img src="logo/FLOWSVC-TRANSPARENT.png" class="logo">
+        <div class="hero-text">
+          <h1 style="font-size:50px"><i>Hi I am Michael</i></h1>
+          <p><i>I Am A Transportation Consultant</i></p>
+          <button><a href="https://express.adobe.com/page/EOCFgrNq6Kndr/" target="blank"></a>Hire me</button>
+        </div>
+      </div>
 
-<p>Due to a career changing injury Michael moved on from being a first responder (firefighter). Michael transitioned into <i>The Transportation and Logistics Field</i> where Michael has 30 years of service in many facets of the transportation industry, from driver to General Manager of a small to medium trucking company. Michael has also served as a union steward for drivers, logistics manager, office manager, and Michael is a certified master transportation broker.</p>
+      <section id="feature">
+      <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why Choose Me</h1>
+      </div>
+      <div class="feature-box">
+        <div class="features">
+          <h1>Experience</h1>
+          <div class="features-desc">
+            <div class="feature-icon">
+              <i class="fa fa-truck"></i>
+            </div>
+            <div class="feature-text">
+              <p>Over 30 Years Transportation & Logistics Experience, 25+ Years Over-The-Road Driving.</p>
+            </div>
+          </div>
+          <h1>Services</h1>
+          <div class="features-desc">
+            <div class="feature-icon">
+              <i class="fa fa-road"></i>
+            </div>
+            <div class="feature-text">
+              <p>Transportation Business Consulting, Independent Freight Dispatching Services and Back Office Business Srevices.</p>
+            </div>
+          </div>
+          <h1>Trustworthy</h1>
+          <div class="features-desc">
+            <div class="feature-icon">
+              <i class="fa fa-shield"></i>
+            </div>
+            <div class="feature-text">
+              <p>Trustworthy, Dependable, Attention to Detail, Valued and Faithful Service.</p>
+            </div>
+          </div>
+          </div>
+          <div class="features-img">
+            <img src="images/rolling-truck.jpeg">
+          </div>
+      </div>
 
-<p>Michael is a husband and the proud father to a son and a daughter and extremely proud grandfather to <em>8</em> wonderful grandchildren. Michael’s passion for education has spilled over to his children and grandchildren. Emphasizing education is a big part of Michaels relationship with his family.  Michael is from Chicago and Chicago sports is a big part of Michael’s fun time life. Watching The Chicago Bears, White Sox, and Chicago Bulls is just not a hobby for Michael, it was a big part of his childhood growing up in Chicago.</p>
+    </section>
 
-<p>Michael has a whole host of training and education in the Transportation and Logistics industry, but Michael since he was a pre-teen has had a passion for technology. Michael holds an Associate Degree in Computer Network & Technology(Cisco Systems) from Glendale, Arizona Community College. Michael is now attending Phoenix Computer Academy studying Web Development. Michael has aspiration to one day achieve the title of Full Stack Web Developer.  Michael is not bothered or intimidated by his age, this will not diminish his passion for learning and achieving.</p>
-</div>
+    <section id="contact">
+      <div class="contact-text">
+      </div>
+     </section>
 
-<div class="right-column">
-    <h2>Contact</h2>
-    <p>Flow Services</p>
-    <p>Glendale, Arizona</p>
-    <p>Email<a href="https://www.flowsvc.com/contact-us">  Contact Me</a></p>
-    <iframe width="455" height="220" src="https://www.youtube.com/embed/d-8dWLTYdCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Web Projects Created By Me:</h2>
-
-    <div class="projects">
-    <p><a href="https://express.adobe.com/page/URK01ha0XeO9A/" target="blank">Web Project/Flag Football</a></p>
-    <p><a href="https://express.adobe.com/page/v2qZDVd4NJVAO/" target="blank">Family Friend Project</a></p>
-    <p><a href="https://express.adobe.com/page/LukUTBKblXnO1/" target="blank">My Blog Project</a></p>
-    <p>"There’s a difference between working hard because you want to and working hard because someone else told you you had to, and how to do it, and when to do it. Even if you’re doing the same work, the independence of doing it on your own terms changes everything in the same way that sleeping in a tent is fun when you’re camping but miserable when you’re homeless".<i><em>.....'Morgan Housel'</i></em></p>
+     <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10183.523583758433!2d-112.1903106013434!3d33.5397724857672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1668050500923!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
     </div>
-</div>
+
+
+
+
+        
 
 
 
@@ -149,5 +296,8 @@ body, html {
 
 
 
-</body>
-</html>
+
+
+
+    </body>
+    </html>
